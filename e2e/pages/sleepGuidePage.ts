@@ -1,5 +1,5 @@
 import type { Locator, Page } from '@playwright/test';
-import { ROUTE_PATH } from '../../src/types/routes';
+import { ROUTE_PATH } from '../../src/domain/routes';
 
 /**
  * The sleep guide. Public, static, and the largest of the two guides: five

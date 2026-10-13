@@ -1,3 +1,5 @@
+import { fileURLToPath, URL } from 'node:url'
+
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { defineConfig, type Plugin } from 'vite'
@@ -8,7 +10,7 @@ import {
   renderPageHtml,
   renderRobotsTxt,
   renderSitemap,
-} from './src/common/seo/staticHead'
+} from './src/domain/staticHead'
 
 /**
  * 建置後補上 SEO 需要的靜態檔案。
@@ -50,6 +52,11 @@ function seoStaticFiles(): Plugin {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '~app': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
   plugins: [
     react(),
     VitePWA({

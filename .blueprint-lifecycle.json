@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "blueprint": "4.1.0",
+  "provenance": "complete",
+  "operations": [],
+  "pending": null,
+  "applications": {
+    ".": {
+      "provenance": [
+        {
+          "kind": "created",
+          "path": "blueprint.config.mjs",
+          "sha256": "ad9f0d5e534cf623d975754aa4a25c6b042fd5b649cd6d66952e437f520a7f88"
+        },
+        {
+          "kind": "generated",
+          "path": "docs/architecture-handbook.md"
+        },
+        {
+          "kind": "section",
+          "path": "CLAUDE.md",
+          "created": true
+        },
+        {
+          "kind": "section",
+          "path": "AGENTS.md",
+          "created": true
+        },
+        {
+          "kind": "generated",
+          "path": "eslint.config.blueprint.mjs"
+        },
+        {
+          "kind": "edit",
+          "path": "tsconfig.json",
+          "before": "",
+          "after": "    \"paths\": { \"~app/*\": [\"./src/*\"] },\n"
+        },
+        {
+          "kind": "edit",
+          "path": "vite.config.ts",
+          "before": "",
+          "after": "import { fileURLToPath, URL } from 'node:url'\n\n"
+        },
+        {
+          "kind": "edit",
+          "path": "vite.config.ts",
+          "before": "",
+          "after": "  resolve: {\n    alias: {\n      '~app': fileURLToPath(new URL('./src', import.meta.url)),\n    },\n  },\n"
+        }
+      ]
+    }
+  }
+}

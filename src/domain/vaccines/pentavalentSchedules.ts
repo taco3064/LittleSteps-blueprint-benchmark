@@ -1,0 +1,50 @@
+import type { VaccineSchedule } from '../records';
+export const entryPentavalent2m: VaccineSchedule = {
+  id: 'pentavalent-2m',
+  name: '五合一疫苗 第1劑',
+  timing: '出生滿2個月',
+  funding: 'national',
+  sourceUrl: 'https://www.cdc.gov.tw/Category/Page/4buEpU_Wqb7WhVNeDk84tg',
+  ageInMonths: 2,
+  ageLabel: '2個月',
+  doses: 4,
+  currentDose: 1,
+  sideEffects: ['發燒', '注射部位腫脹', '煩躁不安', '食慾下降'],
+  notes: '含白喉、破傷風、百日咳、小兒麻痺、b型嗜血桿菌',
+};
+export const entryPentavalent4m: VaccineSchedule = {
+  id: 'pentavalent-4m',
+  name: '五合一疫苗 第2劑',
+  timing: '出生滿4個月',
+  funding: 'national',
+  sourceUrl: 'https://www.cdc.gov.tw/Category/Page/4buEpU_Wqb7WhVNeDk84tg',
+  ageInMonths: 4,
+  ageLabel: '4個月',
+  doses: 4,
+  currentDose: 2,
+  sideEffects: ['發燒', '注射部位腫脹', '煩躁不安', '食慾下降'],
+};
+export const entryPentavalent6m: VaccineSchedule = {
+  id: 'pentavalent-6m',
+  name: '五合一疫苗 第3劑',
+  timing: '出生滿6個月',
+  funding: 'national',
+  sourceUrl: 'https://www.cdc.gov.tw/Category/Page/4buEpU_Wqb7WhVNeDk84tg',
+  ageInMonths: 6,
+  ageLabel: '6個月',
+  doses: 4,
+  currentDose: 3,
+  sideEffects: ['發燒', '注射部位腫脹', '煩躁不安', '食慾下降'],
+};
+export const entryPentavalent18m: VaccineSchedule = {
+  id: 'pentavalent-18m',
+  name: '五合一疫苗 第4劑',
+  timing: '出生滿18個月',
+  funding: 'national',
+  sourceUrl: 'https://www.cdc.gov.tw/Category/Page/4buEpU_Wqb7WhVNeDk84tg',
+  ageInMonths: 18,
+  ageLabel: '18個月',
+  doses: 4,
+  currentDose: 4,
+  sideEffects: ['發燒', '注射部位腫脹', '煩躁不安', '食慾下降'],
+};

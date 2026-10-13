@@ -2,11 +2,9 @@ name: CI
 
 on:
   pull_request:
-  # `master` runs the whole suite, including @p2. On a pull request the P0 and
-  # P1 subset is what blocks the merge; the plan puts the cosmetic cases here so
-  # they are still run somewhere rather than only ever locally.
+  # Every LF pull request and benchmark/lf push runs the complete suite.
   push:
-    branches: [master]
+    branches: [benchmark/lf]
 
 permissions:
   contents: read
@@ -15,11 +13,7 @@ permissions:
 # both runs finish, and each pays for a container pull and a production build
 # to report on a commit nobody is looking at any more.
 #
-# Master is the exception, and it has to be. Every master push shares one
-# `github.ref`, so cancelling would mean a second merge kills the first merge's
-# run — leaving that commit unverified, and its conclusion `cancelled` rather
-# than `success`, so release.yml would never tag it. Each master commit gets its
-# own group and runs to completion.
+# Each benchmark/lf push keeps its own run; newer PR heads supersede old ones.
 concurrency:
   group: ci-${{ github.ref }}-${{ github.event_name == 'push' && github.sha || 'pr' }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
@@ -39,14 +33,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint
-        run: npm run lint
+      - name: Typecheck, lint and architecture
+        run: npm run check
 
       - name: Unit tests
         run: npx vitest run
@@ -86,15 +80,8 @@ jobs:
       # The dummy Firebase configuration and the production build live in
       # playwright.config.ts, so there is nothing to set up here and no secret
       # to leak into a fork's pull request.
-      # On a pull request, the merge-blocking subset. On master, everything —
-      # a @p2 case that runs nowhere is a case nobody maintains.
-      - name: Run the E2E suite
-        run: |
-          if [ "${{ github.event_name }}" = "push" ]; then
-            npm run test:e2e
-          else
-            npm run test:e2e -- --grep "@p0|@p1"
-          fi
+      - name: Run the complete E2E suite
+        run: npm run test:e2e
 
       - name: Upload the report, traces and screenshots
         if: failure()
@@ -123,7 +110,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
 
       # The emulator is a jar. The runner image ships several JDKs and which

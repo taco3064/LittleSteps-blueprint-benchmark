@@ -17,7 +17,7 @@ jobs:
   delete_preview_channel:
     # Same guard as the deploy: a fork's PR never got a channel, and the
     # service-account secret is not exposed to fork workflows anyway.
-    if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
+    if: github.repository == 'sean1093/LittleSteps' && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
       # Both hosting:channel:* commands run `requireConfig` and refuse to start

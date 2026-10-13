@@ -182,7 +182,13 @@ describe('the CLI contract, against real git log output', () => {
   let repo;
 
   const git = (...args) =>
-    execFileSync('git', args, { cwd: repo, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+    execFileSync('git', args, {
+      cwd: repo,
+      env: Object.fromEntries(Object.entries(process.env)
+        .filter(([key]) => !key.startsWith('GIT_'))),
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'pipe'],
+    });
 
   const commit = (message) => {
     fs.appendFileSync(path.join(repo, 'log.txt'), `${message}\n`);
@@ -193,7 +199,7 @@ describe('the CLI contract, against real git log output', () => {
   /** The exact pipeline in .github/workflows/release.yml. */
   const release = (latestTag) => {
     const range = latestTag ? `${latestTag}..HEAD` : 'HEAD';
-    const log = execFileSync('git', ['log', '-z', '--format=%B', range], { cwd: repo });
+    const log = git('log', '-z', '--format=%B', range);
     return execFileSync('node', [SCRIPT, latestTag], { input: log, encoding: 'utf8' });
   };
 
@@ -203,7 +209,23 @@ describe('the CLI contract, against real git log output', () => {
   });
 
   afterEach(() => {
+    vi.unstubAllEnvs();
     fs.rmSync(repo, { recursive: true, force: true });
+  });
+
+  it('keeps hook Git settings outside the fixture repository', () => {
+    vi.stubEnv('GIT_DIR', path.join(repo, 'foreign.git'));
+    vi.stubEnv('GIT_WORK_TREE', path.join(repo, 'foreign-tree'));
+    vi.stubEnv('GIT_INDEX_FILE', path.join(repo, 'foreign-index'));
+    commit(REAL_SUBJECTS.feat);
+    git('tag', 'v0.4.2');
+    commit(REAL_SUBJECTS.fix);
+
+    expect(git('rev-parse', '--show-toplevel').trim()).toBe(repo);
+    expect(release('v0.4.2')).toBe('0.4.3');
+    expect(fs.existsSync(path.join(repo, 'foreign.git'))).toBe(false);
+    expect(fs.existsSync(path.join(repo, 'foreign-tree'))).toBe(false);
+    expect(fs.existsSync(path.join(repo, 'foreign-index'))).toBe(false);
   });
 
   it('prints the bare version, with no v and no trailing newline', () => {
@@ -260,7 +282,7 @@ describe('the CLI contract, against real git log output', () => {
     commit(REAL_SUBJECTS.feat);
     commit(REAL_SUBJECTS.docs);
 
-    const log = execFileSync('git', ['log', '--format=%B%x00', 'v0.4.2..HEAD'], { cwd: repo });
+    const log = git('log', '--format=%B%x00', 'v0.4.2..HEAD');
     const version = execFileSync('node', [SCRIPT, 'v0.4.2'], { input: log, encoding: 'utf8' });
 
     expect(version).toBe('0.5.0');
