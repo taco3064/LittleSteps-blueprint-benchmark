@@ -13,10 +13,10 @@
 | Blueprint 基礎版本 | `@kekkai/blueprint` 4.1.0 |
 | 本次實際工具 | 4.1.0 加尚未發布的規則修正候選；不是 npm 已發布版本 |
 | 修正來源 | [Blueprint PR #546](https://github.com/taco3064/blueprint/pull/546) |
-| 工具來源 commit | `15993dadd50596349c006f7a96a7f6bd2f63fd16` |
-| 工具來源 tree | `0bc0824c4ec8a643b1d42b4572ac55ec347ed8df` |
-| 專案安裝來源 | `vendor/kekkai-blueprint-4.1.0-lf-15993dadd505.tgz` |
-| 套件 SHA-256 | `8904ca112fc515ba15bf234134c04cc3bc8b20d5f41d5c1fca202b2588aa791f` |
+| 工具來源 commit | `4fd5a8d6f74986bf56ad60dcb5fe298bc62d19b3` |
+| 工具來源 tree | `b8dfdb56e3ee3a4739e5f71cd0c2b2c322b7f43e` |
+| 專案安裝來源 | `vendor/kekkai-blueprint-4.1.0-lf-4fd5a8d6f749.tgz` |
+| 套件 SHA-256 | `d171a8b1cc3ba3cc88d3fb3bbc7f5e0db7f906c4865e2796360d7bee38950b8e` |
 
 `package.json` 使用本地 tarball，lockfile 固定 integrity；乾淨安裝不依賴工作目錄中
 手動修改的 `node_modules`。套件由上述已獨立審查、通過正常提交 hook 的 source tree
@@ -81,7 +81,8 @@ npm run test:rules
 | 完整瀏覽器測試 | [e2e.log](benchmark-evidence/e2e.log)：252／252 通過 |
 | 前後畫面 | 25 條路由 × 390／320 寬度，50 組 PNG SHA-256 與全文完全相同，100 次導航無 pageerror |
 | 獨立審查 | 未發現產品語意回歸；在隔離複本移除 Radar main，兩項 landmark 契約測試確實失敗 |
-| 真實 CI | 以此 PR exact-head 的 GitHub Actions 結果為準；本機成功不等於 CI 成功 |
+| 資料庫規則 | [database-rules.log](benchmark-evidence/database-rules.log)：Java 21、demo emulator，145 通過／0 失敗 |
+| 真實 CI | LF PR #3 目前尚未產生 Actions run，不能視為通過；以 exact-head CI 結果為合併門檻 |
 
 畫面詳細條件與限制見 [視覺報告](benchmark-evidence/visual-REPORT.md)、
 [比較結果](benchmark-evidence/visual-comparison.json) 與
@@ -104,3 +105,11 @@ Blueprint 規則／metadata 測試不同步。加強提交 hook 後另發現原�
 繼承外層 Git 環境，已隔離所有 `GIT_` 子程序變數並新增回歸案例；遠端未受影響。均修復原因後重新驗證，沒有刪除測試或放寬規則。
 舊失敗 checkpoint 不是最終結果；本目錄保留最終成功證據。套件修正仍須通過其
 PR 的 deterministic／mutation CI，並另行完成正式發布流程，才能稱為已發布版本。
+
+工具首輪 mutation CI 發現 37 個 Survived 與 5 個 Timeout；修正保留不可呼叫或未解析
+匯出的 binding 身分，避免 wildcard 匯出吞掉歧義，並增加反例／邊界測試及有限迭代。
+獨立審查先重現真實漏洞，再驗證修正；229 項針對性測試與正常提交的完整檢查通過。
+另有兩處 sentinel 條件的指定 mutator，依工具儲存庫政策記錄經獨立證明的等價性；
+這不是 lint 停用、baseline 或棘輪，其他變異仍由 CI 驗證。
+新版 authoritative CI：[run 38379882428](https://github.com/taco3064/blueprint/actions/runs/38379882428)，
+對應上述 commit；mutation shard 最長 25 分鐘。此處不將進行中的 run 宣稱為成功。

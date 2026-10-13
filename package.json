@@ -31,7 +31,7 @@
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "4.7.2",
     "@eslint/js": "9.39.2",
-    "@kekkai/blueprint": "file:vendor/kekkai-blueprint-4.1.0-lf-15993dadd505.tgz",
+    "@kekkai/blueprint": "file:vendor/kekkai-blueprint-4.1.0-lf-4fd5a8d6f749.tgz",
     "@playwright/test": "1.56.0",
     "@stylistic/eslint-plugin": "5.10.0",
     "@testing-library/jest-dom": "^6.9.1",

@@ -1,0 +1,411 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+[WebServer] (node:32) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+[WebServer]
+[WebServer] > littlesteps@0.0.1 build
+[WebServer] > tsc && vite build
+[WebServer]
+
+[WebServer] (node:53) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] vite v5.4.21 building for production...
+
+[WebServer] transforming...
+
+[WebServer] ✓ 2466 modules transformed.
+
+[WebServer] rendering chunks...
+
+[WebServer] computing gzip size...
+
+[WebServer] dist/registerSW.js                               0.13 kB
+
+[WebServer] dist/manifest.webmanifest                        0.52 kB
+[WebServer] dist/index.html                                  2.63 kB │ gzip:   1.13 kB
+[WebServer] dist/assets/index-BTrKGrB8.css                  16.23 kB │ gzip:   6.60 kB
+[WebServer] dist/assets/index-Df1r3g6S.css                  45.83 kB │ gzip:   8.17 kB
+[WebServer] dist/assets/nursingRoomsMeta-DNKWVZnQ.js         0.05 kB │ gzip:   0.07 kB
+[WebServer] dist/assets/minus-BrihKwHH.js                    0.29 kB │ gzip:   0.24 kB
+[WebServer] dist/assets/check-C9TlN-X8.js                    0.29 kB │ gzip:   0.24 kB
+[WebServer] dist/assets/chevron-down-BDyYGVm1.js             0.30 kB │ gzip:   0.24 kB
+[WebServer] dist/assets/chevron-right-DXQnDB5A.js            0.30 kB │ gzip:   0.25 kB
+[WebServer] dist/assets/plus-FK2EnsOY.js                     0.32 kB │ gzip:   0.25 kB
+[WebServer] dist/assets/arrow-up-right-wHp0UN4-.js           0.33 kB │ gzip:   0.26 kB
+[WebServer] dist/assets/search-DHVMgQys.js                   0.34 kB │ gzip:   0.27 kB
+[WebServer] dist/assets/clock--mdmWF9i.js                    0.35 kB │ gzip:   0.27 kB
+[WebServer] dist/assets/star-BisQ2u4P.js                     0.38 kB │ gzip:   0.29 kB
+[WebServer] dist/assets/ageDefaults-CyCIFkyH.js              0.45 kB │ gzip:   0.29 kB
+[WebServer] dist/assets/share-BFzt-sut.js                    0.47 kB │ gzip:   0.40 kB
+[WebServer] dist/assets/calendar-BhT-SJ4X.js                 0.49 kB │ gzip:   0.32 kB
+[WebServer] dist/assets/useCentreSelectedChip-B6oOAteP.js    0.52 kB │ gzip:   0.35 kB
+[WebServer] dist/assets/trash-2-BqGvHte3.js                  0.53 kB │ gzip:   0.35 kB
+[WebServer] dist/assets/droplets-C_FCzc3-.js                 0.54 kB │ gzip:   0.39 kB
+[WebServer] dist/assets/BloomShell-Rm8Kn-CU.js               0.60 kB │ gzip:   0.32 kB
+[WebServer] dist/assets/AgeBandPicker-CZ9_JUJM.js            0.61 kB │ gzip:   0.40 kB
+[WebServer] dist/assets/useFoodTracking-DWLKpiHk.js          0.71 kB │ gzip:   0.42 kB
+[WebServer] dist/assets/undo-2-CL95L3e3.js                   0.74 kB │ gzip:   0.37 kB
+[WebServer] dist/assets/prenatalSchedule-BHietF2p.js         0.75 kB │ gzip:   0.45 kB
+[WebServer] dist/assets/party-popper-CDza6C7Y.js             0.90 kB │ gzip:   0.53 kB
+[WebServer] dist/assets/zap-CArbYZyG.js                      1.03 kB │ gzip:   0.44 kB
+[WebServer] dist/assets/index-QwVrVvT3.js                    1.12 kB │ gzip:   0.75 kB
+[WebServer] dist/assets/index-rYZnyAqv.js                    1.14 kB │ gzip:   0.73 kB
+[WebServer] dist/assets/preferences-A_HJX7il.js              1.18 kB │ gzip:   0.61 kB
+[WebServer] dist/assets/heart-gbXU3n7K.js                    1.22 kB │ gzip:   0.52 kB
+[WebServer] dist/assets/ChildSwitcher-BgfelacS.js            1.45 kB │ gzip:   0.79 kB
+[WebServer] dist/assets/VenueReportButton-LJBoubWz.js        1.53 kB │ gzip:   1.05 kB
+[WebServer] dist/assets/summaryCalculator-D2dkGK_G.js        1.62 kB │ gzip:   0.90 kB
+[WebServer] dist/assets/trendCalculator-TpzdFTAE.js          2.13 kB │ gzip:   0.94 kB
+[WebServer] dist/assets/icsExport-R-5TEbhO.js                2.30 kB │ gzip:   1.32 kB
+[WebServer] dist/assets/logHelpers-D_NKrLpy.js               2.49 kB │ gzip:   1.17 kB
+
+[WebServer] dist/assets/ExplorerShell-ZNi2wc9x.js            3.25 kB │ gzip:   1.50 kB
+[WebServer] dist/assets/index-BaLTEwJH.js                    3.56 kB │ gzip:   1.92 kB
+[WebServer] dist/assets/sleep-_B6uSn5j.js                    3.59 kB │ gzip:   2.90 kB
+[WebServer] dist/assets/sleepAnalysis-CgT6auIC.js            4.27 kB │ gzip:   2.59 kB
+[WebServer] dist/assets/index-BlFMwpnJ.js                    5.01 kB │ gzip:   3.37 kB
+[WebServer] dist/assets/prenatalCheckups-BroJb0N_.js         5.92 kB │ gzip:   3.97 kB
+[WebServer] dist/assets/milestones-IrjSiy63.js               6.00 kB │ gzip:   4.63 kB
+[WebServer] dist/assets/index-ClXbAOR1.js                    6.21 kB │ gzip:   3.04 kB
+[WebServer] dist/assets/index-D6GPpBsb.js                    6.21 kB │ gzip:   2.51 kB
+[WebServer] dist/assets/index-B-u-3102.js                    7.05 kB │ gzip:   2.39 kB
+[WebServer] dist/assets/index--8qUX6Dc.js                    7.20 kB │ gzip:   3.36 kB
+[WebServer] dist/assets/NoChildNotice-DJ3K_c0w.js            7.79 kB │ gzip:   7.28 kB
+[WebServer] dist/assets/index-zOEGDCvl.js                    7.99 kB │ gzip:   5.44 kB
+[WebServer] dist/assets/WikiBrowser-DFmb9Voi.js              8.24 kB │ gzip:   3.11 kB
+[WebServer] dist/assets/index-CT5_MPV6.js                    9.09 kB │ gzip:   7.78 kB
+[WebServer] dist/assets/useGrowthTracking-hj0P80Ar.js        9.65 kB │ gzip:   3.49 kB
+[WebServer] dist/assets/index-BAi0li4i.js                   10.09 kB │ gzip:   3.58 kB
+[WebServer] dist/assets/vaccineSchedule-xWUH0o9X.js         11.77 kB │ gzip:   4.39 kB
+[WebServer] dist/assets/index-8TQldndL.js                   12.23 kB │ gzip:   5.52 kB
+[WebServer] dist/assets/index-DtoWD_4E.js                   14.84 kB │ gzip:  10.46 kB
+[WebServer] dist/assets/lucideIcons-DtrhKeiW.js             15.63 kB │ gzip:   3.81 kB
+[WebServer] dist/assets/index-2i84QJQV.js                   17.33 kB │ gzip:   9.60 kB
+[WebServer] dist/assets/index-DDOPZRr5.js                   17.36 kB │ gzip:   6.13 kB
+
+[WebServer] dist/assets/index-DhzpZ_2P.js                   17.36 kB │ gzip:   6.01 kB
+[WebServer] dist/assets/index-RGdtxbwd.js                   17.79 kB │ gzip:  11.60 kB
+[WebServer] dist/assets/index-DJKOAuF2.js                   18.54 kB │ gzip:   7.88 kB
+[WebServer] dist/assets/index-tSWEH9B5.js                   20.56 kB │ gzip:  17.33 kB
+[WebServer] dist/assets/index-BJTwgSYu.js                   21.16 kB │ gzip:   6.99 kB
+[WebServer] dist/assets/index-U21Zu3yg.js                   24.89 kB │ gzip:   8.33 kB
+[WebServer] dist/assets/index-BmASM_W7.js                   27.11 kB │ gzip:  24.98 kB
+[WebServer] dist/assets/index-Bb1qPF_m.js                   27.99 kB │ gzip:   9.59 kB
+[WebServer] dist/assets/index.esm-B6NlcgfT.js               34.36 kB │ gzip:   7.29 kB
+[WebServer] dist/assets/index-D6im1LF5.js                   39.29 kB │ gzip:  35.47 kB
+[WebServer] dist/assets/index-BQYB77aN.js                   46.74 kB │ gzip:  17.29 kB
+[WebServer] dist/assets/index-BcxYWgVs.js                  242.44 kB │ gzip:  77.26 kB
+[WebServer] dist/assets/index-14Dj1qxW.js                  709.77 kB │ gzip: 194.58 kB
+
+[WebServer]
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+[WebServer] ✓ built in 6.36s
+
+[WebServer] (node:53) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] (node:53) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer]
+[WebServer] PWA v0.17.5
+[WebServer] mode      generateSW
+[WebServer] precache  100 entries (2024.42 KiB)
+[WebServer] files generated
+[WebServer]   dist/sw.js
+[WebServer]   dist/workbox-835c8c05.js
+
+[WebServer] (node:80) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+[WebServer]
+[WebServer] > littlesteps@0.0.1 preview
+[WebServer] > vite preview --host 127.0.0.1 --port 4173 --strictPort
+[WebServer]
+
+[WebServer] (node:93) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer]   ➜  Local:   http://127.0.0.1:4173/
+
+
+Running 252 tests using 1 worker
+
+(node:116) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:116) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/252] [mobile-390] › e2e/specs/auth.e2e.spec.ts:32:1 › AUTH-01 @p0 every gated route shows its service intro at the same URL
+[2/252] [mobile-390] › e2e/specs/auth.e2e.spec.ts:55:1 › AUTH-02 @p0 no gated route leaks a child record while signed out
+[3/252] [mobile-390] › e2e/specs/auth.e2e.spec.ts:75:1 › AUTH-03 @p0 every public route renders itself, not an intro page
+[4/252] [mobile-390] › e2e/specs/auth.e2e.spec.ts:93:1 › AUTH-04 @p1 the routes reachable signed out are exactly the public ones
+[5/252] [mobile-390] › e2e/specs/guard.e2e.spec.ts:87:1 › GUARD-01 @p0 the board renders for the default county and age band
+[6/252] [mobile-390] › e2e/specs/guard.e2e.spec.ts:103:1 › GUARD-02 @p0 fresh data shows the week range and no freshness banner
+[7/252] [mobile-390] › e2e/specs/guard.e2e.spec.ts:117:1 › GUARD-03 @p0 stale data shows the stale banner and keeps every row status
+[8/252] [mobile-390] › e2e/specs/guard.e2e.spec.ts:139:1 › GUARD-04 @p0 expired data suppresses every status and the board summary
+[9/252] [mobile-390] › e2e/specs/guard.e2e.spec.ts:161:1 › GUARD-05 @p1 choosing a county switches the board and is remembered across a reload
+[10/252] [mobile-390] › e2e/specs/guard.e2e.spec.ts:183:1 › GUARD-06 @p1 choosing an age band changes every row
+[11/252] [mobile-390] › e2e/specs/guard.e2e.spec.ts:199:1 › GUARD-07 @p1 a disease drawer opens from its row and closes back to the board
+[12/252] [mobile-390] › e2e/specs/guard.e2e.spec.ts:249:3 › a first visit, with nothing in the PWA precache › GUARD-08 @p0 the empty state renders when the radar data cannot be loaded
+[13/252] [mobile-390] › e2e/specs/guard.e2e.spec.ts:267:1 › GUARD-09 @p2 the county chip row scrolls inside itself, not the page
+[14/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 home exposes 0 banner landmark
+[15/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 about exposes 1 banner landmark
+[16/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littlesteps/care-guide exposes 1 banner landmark
+[17/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littlesteps/sleep-training exposes 1 banner landmark
+[18/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littlesteps/baby-wiki exposes 1 banner landmark
+[19/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littlebloom/wiki exposes 1 banner landmark
+[20/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littleexplorer/wiki exposes 1 banner landmark
+[21/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littleouting exposes 1 banner landmark
+[22/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 babyoasis exposes 1 banner landmark
+[23/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littleguard exposes 1 banner landmark
+[24/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 home exposes exactly one main landmark
+[25/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 about exposes exactly one main landmark
+[26/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littlesteps/care-guide exposes exactly one main landmark
+[27/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littlesteps/sleep-training exposes exactly one main landmark
+[28/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littlesteps/baby-wiki exposes exactly one main landmark
+[29/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littlebloom/wiki exposes exactly one main landmark
+[30/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littleexplorer/wiki exposes exactly one main landmark
+[31/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littleouting exposes exactly one main landmark
+[32/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 babyoasis exposes exactly one main landmark
+[33/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littleguard exposes exactly one main landmark
+[34/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps signed out exposes one main and no banner
+[35/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/dashboard signed out exposes one main and no banner
+[36/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/milestones signed out exposes one main and no banner
+[37/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/vaccine-tracking signed out exposes one main and no banner
+[38/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/complementary-food signed out exposes one main and no banner
+[39/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/daily-log signed out exposes one main and no banner
+[40/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/growth-charts signed out exposes one main and no banner
+[41/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/sleep-analysis signed out exposes one main and no banner
+[42/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/clinic-summary signed out exposes one main and no banner
+[43/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/report signed out exposes one main and no banner
+[44/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlebloom signed out exposes one main and no banner
+[45/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlebloom/prenatal signed out exposes one main and no banner
+[46/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littleexplorer signed out exposes one main and no banner
+[47/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littleexplorer/reminders signed out exposes one main and no banner
+[48/252] [mobile-390] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littleexplorer/diary signed out exposes one main and no banner
+[49/252] [mobile-390] › e2e/specs/nav.e2e.spec.ts:19:1 › NAV-01 @p1 every public path boots on its own route
+[50/252] [mobile-390] › e2e/specs/nav.e2e.spec.ts:40:1 › NAV-02 @p1 a deep link to a gated route keeps the URL it was given
+[51/252] [mobile-390] › e2e/specs/nav.e2e.spec.ts:52:1 › NAV-03 @p1 an unknown path renders the hub instead of a blank page
+[52/252] [mobile-390] › e2e/specs/nav.e2e.spec.ts:73:1 › NAV-04 @p1 a legacy hash link lands on the path route
+[53/252] [mobile-390] › e2e/specs/nav.e2e.spec.ts:86:1 › NAV-05 @p1 every service opens from the hub and returns to it
+[54/252] [mobile-390] › e2e/specs/nav.e2e.spec.ts:108:1 › NAV-06 @p0 back and forward restore the right page across three routes
+[55/252] [mobile-390] › e2e/specs/nav.e2e.spec.ts:137:1 › NAV-07 @p2 reloading a deep route re-renders the same page
+[56/252] [mobile-390] › e2e/specs/oasis.e2e.spec.ts:66:1 › OASIS-01 @p1 search finds rooms by name, by address and by district
+[57/252] [mobile-390] › e2e/specs/oasis.e2e.spec.ts:91:3 › OASIS-02 @p0 the list tag and the report agree for an internal venue
+[58/252] [mobile-390] › e2e/specs/oasis.e2e.spec.ts:91:3 › OASIS-02 @p0 the list tag and the report agree for a staff-help venue
+[59/252] [mobile-390] › e2e/specs/oasis.e2e.spec.ts:113:1 › OASIS-03 @p0 a walk-in room shows no tag but the report still names it
+[60/252] [mobile-390] › e2e/specs/oasis.e2e.spec.ts:136:1 › OASIS-04 @p1 excluding internal venues narrows a filtered list, and clears again
+[61/252] [mobile-390] › e2e/specs/oasis.e2e.spec.ts:157:1 › OASIS-05 @p1 a room sheet opens with its details, and the report form opens signed out
+[62/252] [mobile-390] › e2e/specs/oasis.e2e.spec.ts:187:1 › OASIS-06 @p1 Leaflet mounts and draws clusters with the tiles blocked
+[63/252] [mobile-390] › e2e/specs/oasis.e2e.spec.ts:237:3 › a first visit, with nothing in the PWA precache › OASIS-07 @p0 a failed nursingRooms.json says so and offers a retry
+[64/252] [mobile-390] › e2e/specs/oasis.e2e.spec.ts:251:1 › OASIS-08 @p2 a long venue name truncates beside its tag
+[65/252] [mobile-390] › e2e/specs/outing.e2e.spec.ts:24:1 › OUTING-01 @p1 switching views renames the search box and changes the results
+[66/252] [mobile-390] › e2e/specs/outing.e2e.spec.ts:46:1 › OUTING-02 @p1 a search filters the list and clearing it restores the list
+[67/252] [mobile-390] › e2e/specs/outing.e2e.spec.ts:67:1 › OUTING-03 @p0 a county shows its verified rules, or says they are unverified
+[68/252] [mobile-390] › e2e/specs/outing.e2e.spec.ts:115:3 › a first visit, with nothing in the PWA precache › OUTING-04 @p0 a failed familyCentres.json says so instead of listing nothing
+[69/252] [mobile-390] › e2e/specs/outing.e2e.spec.ts:128:1 › OUTING-05 @p2 the checklist tab renders every item with its reason
+[70/252] [mobile-390] › e2e/specs/pwa.e2e.spec.ts:15:1 › PWA-01 @p1 the manifest is served, parses, and its icons exist
+[71/252] [mobile-390] › e2e/specs/pwa.e2e.spec.ts:34:1 › PWA-02 @p1 the service worker registers on the built app
+[72/252] [mobile-390] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 home logs no uncaught errors
+[73/252] [mobile-390] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 about logs no uncaught errors
+[74/252] [mobile-390] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littlesteps/care-guide logs no uncaught errors
+[75/252] [mobile-390] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littlesteps/sleep-training logs no uncaught errors
+[76/252] [mobile-390] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littlesteps/baby-wiki logs no uncaught errors
+[77/252] [mobile-390] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littlebloom/wiki logs no uncaught errors
+[78/252] [mobile-390] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littleexplorer/wiki logs no uncaught errors
+[79/252] [mobile-390] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littleouting logs no uncaught errors
+[80/252] [mobile-390] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 babyoasis logs no uncaught errors
+[81/252] [mobile-390] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littleguard logs no uncaught errors
+[82/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 home keeps its horizontal overflow off the page body
+[83/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 about keeps its horizontal overflow off the page body
+[84/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littlesteps/care-guide keeps its horizontal overflow off the page body
+[85/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littlesteps/sleep-training keeps its horizontal overflow off the page body
+[86/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littlesteps/baby-wiki keeps its horizontal overflow off the page body
+[87/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littlebloom/wiki keeps its horizontal overflow off the page body
+[88/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littleexplorer/wiki keeps its horizontal overflow off the page body
+[89/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littleouting keeps its horizontal overflow off the page body
+[90/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 babyoasis keeps its horizontal overflow off the page body
+[91/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littleguard keeps its horizontal overflow off the page body
+[92/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 home has no control under 44px
+[93/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 about has no control under 44px
+[94/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littlesteps/care-guide has no control under 44px
+[95/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littlesteps/sleep-training has no control under 44px
+[96/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littlesteps/baby-wiki has no control under 44px
+[97/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littlebloom/wiki has no control under 44px
+[98/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littleexplorer/wiki has no control under 44px
+[99/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littleouting has no control under 44px
+[100/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 babyoasis has no control under 44px
+[101/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littleguard has no control under 44px
+[102/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 home keeps every nowrap label inside its own box
+[103/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 about keeps every nowrap label inside its own box
+[104/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littlesteps/care-guide keeps every nowrap label inside its own box
+[105/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littlesteps/sleep-training keeps every nowrap label inside its own box
+[106/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littlesteps/baby-wiki keeps every nowrap label inside its own box
+[107/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littlebloom/wiki keeps every nowrap label inside its own box
+[108/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littleexplorer/wiki keeps every nowrap label inside its own box
+[109/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littleouting keeps every nowrap label inside its own box
+[110/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 babyoasis keeps every nowrap label inside its own box
+[111/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littleguard keeps every nowrap label inside its own box
+[112/252] [mobile-390] › e2e/specs/rwd.e2e.spec.ts:108:1 › RWD-03 @p1 an open modal fits the viewport and scrolls its own content
+[113/252] [mobile-390] › e2e/specs/seo.e2e.spec.ts:25:1 › SEO-01 @p0 robots.txt disallows every route that requires signing in
+[114/252] [mobile-390] › e2e/specs/seo.e2e.spec.ts:41:1 › SEO-01 @p0 a gated service root with public pages below it is anchored
+[115/252] [mobile-390] › e2e/specs/seo.e2e.spec.ts:59:1 › SEO-02 @p0 sitemap.xml lists exactly the indexable pages
+[116/252] [mobile-390] › e2e/specs/seo.e2e.spec.ts:72:1 › SEO-03 @p1 each public route is served its own prerendered head
+[117/252] [mobile-390] › e2e/specs/smoke.e2e.spec.ts:26:1 › HARNESS-01 @p0 BabyOasis loads, with its search input and map clusters
+[118/252] [mobile-390] › e2e/specs/wiki.e2e.spec.ts:44:3 › WIKI-01 @p0 littlesteps/baby-wiki lists all 15 of its articles
+[119/252] [mobile-390] › e2e/specs/wiki.e2e.spec.ts:44:3 › WIKI-01 @p0 littlebloom/wiki lists all 25 of its articles
+[120/252] [mobile-390] › e2e/specs/wiki.e2e.spec.ts:44:3 › WIKI-01 @p0 littleexplorer/wiki lists all 45 of its articles
+[121/252] [mobile-390] › e2e/specs/wiki.e2e.spec.ts:52:1 › WIKI-02 @p1 an article expands and collapses in place, without touching the URL
+[122/252] [mobile-390] › e2e/specs/wiki.e2e.spec.ts:88:1 › WIKI-03 @p1 searching narrows the list and clearing restores it
+[123/252] [mobile-390] › e2e/specs/wiki.e2e.spec.ts:106:1 › WIKI-03 @p1 a category chip narrows the list and 全部 restores it
+[124/252] [mobile-390] › e2e/specs/wiki.e2e.spec.ts:127:1 › WIKI-04 @p1 the care guide renders its guides signed out
+[125/252] [mobile-390] › e2e/specs/wiki.e2e.spec.ts:142:1 › WIKI-04 @p1 the sleep guide renders its methods and ritual signed out
+[126/252] [mobile-390] › e2e/specs/wiki.e2e.spec.ts:154:1 › WIKI-05 @p1 a cross-wiki hit lands on the other wiki with the keyword kept
+(node:2080) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:2080) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[127/252] [mobile-320] › e2e/specs/auth.e2e.spec.ts:32:1 › AUTH-01 @p0 every gated route shows its service intro at the same URL
+[128/252] [mobile-320] › e2e/specs/auth.e2e.spec.ts:55:1 › AUTH-02 @p0 no gated route leaks a child record while signed out
+[129/252] [mobile-320] › e2e/specs/auth.e2e.spec.ts:75:1 › AUTH-03 @p0 every public route renders itself, not an intro page
+[130/252] [mobile-320] › e2e/specs/auth.e2e.spec.ts:93:1 › AUTH-04 @p1 the routes reachable signed out are exactly the public ones
+[131/252] [mobile-320] › e2e/specs/guard.e2e.spec.ts:87:1 › GUARD-01 @p0 the board renders for the default county and age band
+[132/252] [mobile-320] › e2e/specs/guard.e2e.spec.ts:103:1 › GUARD-02 @p0 fresh data shows the week range and no freshness banner
+[133/252] [mobile-320] › e2e/specs/guard.e2e.spec.ts:117:1 › GUARD-03 @p0 stale data shows the stale banner and keeps every row status
+[134/252] [mobile-320] › e2e/specs/guard.e2e.spec.ts:139:1 › GUARD-04 @p0 expired data suppresses every status and the board summary
+[135/252] [mobile-320] › e2e/specs/guard.e2e.spec.ts:161:1 › GUARD-05 @p1 choosing a county switches the board and is remembered across a reload
+[136/252] [mobile-320] › e2e/specs/guard.e2e.spec.ts:183:1 › GUARD-06 @p1 choosing an age band changes every row
+[137/252] [mobile-320] › e2e/specs/guard.e2e.spec.ts:199:1 › GUARD-07 @p1 a disease drawer opens from its row and closes back to the board
+[138/252] [mobile-320] › e2e/specs/guard.e2e.spec.ts:249:3 › a first visit, with nothing in the PWA precache › GUARD-08 @p0 the empty state renders when the radar data cannot be loaded
+[139/252] [mobile-320] › e2e/specs/guard.e2e.spec.ts:267:1 › GUARD-09 @p2 the county chip row scrolls inside itself, not the page
+[140/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 home exposes 0 banner landmark
+[141/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 about exposes 1 banner landmark
+[142/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littlesteps/care-guide exposes 1 banner landmark
+[143/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littlesteps/sleep-training exposes 1 banner landmark
+[144/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littlesteps/baby-wiki exposes 1 banner landmark
+[145/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littlebloom/wiki exposes 1 banner landmark
+[146/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littleexplorer/wiki exposes 1 banner landmark
+[147/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littleouting exposes 1 banner landmark
+[148/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 babyoasis exposes 1 banner landmark
+[149/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:56:3 › A11Y-01 @p1 littleguard exposes 1 banner landmark
+[150/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 home exposes exactly one main landmark
+[151/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 about exposes exactly one main landmark
+[152/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littlesteps/care-guide exposes exactly one main landmark
+[153/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littlesteps/sleep-training exposes exactly one main landmark
+[154/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littlesteps/baby-wiki exposes exactly one main landmark
+[155/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littlebloom/wiki exposes exactly one main landmark
+[156/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littleexplorer/wiki exposes exactly one main landmark
+[157/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littleouting exposes exactly one main landmark
+[158/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 babyoasis exposes exactly one main landmark
+[159/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:66:3 › A11Y-02 @p1 littleguard exposes exactly one main landmark
+[160/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps signed out exposes one main and no banner
+[161/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/dashboard signed out exposes one main and no banner
+[162/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/milestones signed out exposes one main and no banner
+[163/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/vaccine-tracking signed out exposes one main and no banner
+[164/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/complementary-food signed out exposes one main and no banner
+[165/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/daily-log signed out exposes one main and no banner
+[166/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/growth-charts signed out exposes one main and no banner
+[167/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/sleep-analysis signed out exposes one main and no banner
+[168/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/clinic-summary signed out exposes one main and no banner
+[169/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlesteps/report signed out exposes one main and no banner
+[170/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlebloom signed out exposes one main and no banner
+[171/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littlebloom/prenatal signed out exposes one main and no banner
+[172/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littleexplorer signed out exposes one main and no banner
+[173/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littleexplorer/reminders signed out exposes one main and no banner
+[174/252] [mobile-320] › e2e/specs/landmarks.e2e.spec.ts:82:3 › A11Y-01/02 @p1 littleexplorer/diary signed out exposes one main and no banner
+[175/252] [mobile-320] › e2e/specs/nav.e2e.spec.ts:19:1 › NAV-01 @p1 every public path boots on its own route
+[176/252] [mobile-320] › e2e/specs/nav.e2e.spec.ts:40:1 › NAV-02 @p1 a deep link to a gated route keeps the URL it was given
+[177/252] [mobile-320] › e2e/specs/nav.e2e.spec.ts:52:1 › NAV-03 @p1 an unknown path renders the hub instead of a blank page
+[178/252] [mobile-320] › e2e/specs/nav.e2e.spec.ts:73:1 › NAV-04 @p1 a legacy hash link lands on the path route
+[179/252] [mobile-320] › e2e/specs/nav.e2e.spec.ts:86:1 › NAV-05 @p1 every service opens from the hub and returns to it
+[180/252] [mobile-320] › e2e/specs/nav.e2e.spec.ts:108:1 › NAV-06 @p0 back and forward restore the right page across three routes
+[181/252] [mobile-320] › e2e/specs/nav.e2e.spec.ts:137:1 › NAV-07 @p2 reloading a deep route re-renders the same page
+[182/252] [mobile-320] › e2e/specs/oasis.e2e.spec.ts:66:1 › OASIS-01 @p1 search finds rooms by name, by address and by district
+[183/252] [mobile-320] › e2e/specs/oasis.e2e.spec.ts:91:3 › OASIS-02 @p0 the list tag and the report agree for an internal venue
+[184/252] [mobile-320] › e2e/specs/oasis.e2e.spec.ts:91:3 › OASIS-02 @p0 the list tag and the report agree for a staff-help venue
+[185/252] [mobile-320] › e2e/specs/oasis.e2e.spec.ts:113:1 › OASIS-03 @p0 a walk-in room shows no tag but the report still names it
+[186/252] [mobile-320] › e2e/specs/oasis.e2e.spec.ts:136:1 › OASIS-04 @p1 excluding internal venues narrows a filtered list, and clears again
+[187/252] [mobile-320] › e2e/specs/oasis.e2e.spec.ts:157:1 › OASIS-05 @p1 a room sheet opens with its details, and the report form opens signed out
+[188/252] [mobile-320] › e2e/specs/oasis.e2e.spec.ts:187:1 › OASIS-06 @p1 Leaflet mounts and draws clusters with the tiles blocked
+[189/252] [mobile-320] › e2e/specs/oasis.e2e.spec.ts:237:3 › a first visit, with nothing in the PWA precache › OASIS-07 @p0 a failed nursingRooms.json says so and offers a retry
+[190/252] [mobile-320] › e2e/specs/oasis.e2e.spec.ts:251:1 › OASIS-08 @p2 a long venue name truncates beside its tag
+[191/252] [mobile-320] › e2e/specs/outing.e2e.spec.ts:24:1 › OUTING-01 @p1 switching views renames the search box and changes the results
+[192/252] [mobile-320] › e2e/specs/outing.e2e.spec.ts:46:1 › OUTING-02 @p1 a search filters the list and clearing it restores the list
+[193/252] [mobile-320] › e2e/specs/outing.e2e.spec.ts:67:1 › OUTING-03 @p0 a county shows its verified rules, or says they are unverified
+[194/252] [mobile-320] › e2e/specs/outing.e2e.spec.ts:115:3 › a first visit, with nothing in the PWA precache › OUTING-04 @p0 a failed familyCentres.json says so instead of listing nothing
+[195/252] [mobile-320] › e2e/specs/outing.e2e.spec.ts:128:1 › OUTING-05 @p2 the checklist tab renders every item with its reason
+[196/252] [mobile-320] › e2e/specs/pwa.e2e.spec.ts:15:1 › PWA-01 @p1 the manifest is served, parses, and its icons exist
+[197/252] [mobile-320] › e2e/specs/pwa.e2e.spec.ts:34:1 › PWA-02 @p1 the service worker registers on the built app
+[198/252] [mobile-320] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 home logs no uncaught errors
+[199/252] [mobile-320] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 about logs no uncaught errors
+[200/252] [mobile-320] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littlesteps/care-guide logs no uncaught errors
+[201/252] [mobile-320] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littlesteps/sleep-training logs no uncaught errors
+[202/252] [mobile-320] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littlesteps/baby-wiki logs no uncaught errors
+[203/252] [mobile-320] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littlebloom/wiki logs no uncaught errors
+[204/252] [mobile-320] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littleexplorer/wiki logs no uncaught errors
+[205/252] [mobile-320] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littleouting logs no uncaught errors
+[206/252] [mobile-320] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 babyoasis logs no uncaught errors
+[207/252] [mobile-320] › e2e/specs/pwa.e2e.spec.ts:52:3 › PWA-03 @p2 littleguard logs no uncaught errors
+[208/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 home keeps its horizontal overflow off the page body
+[209/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 about keeps its horizontal overflow off the page body
+[210/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littlesteps/care-guide keeps its horizontal overflow off the page body
+[211/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littlesteps/sleep-training keeps its horizontal overflow off the page body
+[212/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littlesteps/baby-wiki keeps its horizontal overflow off the page body
+[213/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littlebloom/wiki keeps its horizontal overflow off the page body
+[214/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littleexplorer/wiki keeps its horizontal overflow off the page body
+[215/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littleouting keeps its horizontal overflow off the page body
+[216/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 babyoasis keeps its horizontal overflow off the page body
+[217/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:23:3 › RWD-01 @p1 littleguard keeps its horizontal overflow off the page body
+[218/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 home has no control under 44px
+[219/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 about has no control under 44px
+[220/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littlesteps/care-guide has no control under 44px
+[221/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littlesteps/sleep-training has no control under 44px
+[222/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littlesteps/baby-wiki has no control under 44px
+[223/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littlebloom/wiki has no control under 44px
+[224/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littleexplorer/wiki has no control under 44px
+[225/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littleouting has no control under 44px
+[226/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 babyoasis has no control under 44px
+[227/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:42:3 › RWD-02 @p1 littleguard has no control under 44px
+[228/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 home keeps every nowrap label inside its own box
+[229/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 about keeps every nowrap label inside its own box
+[230/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littlesteps/care-guide keeps every nowrap label inside its own box
+[231/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littlesteps/sleep-training keeps every nowrap label inside its own box
+[232/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littlesteps/baby-wiki keeps every nowrap label inside its own box
+[233/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littlebloom/wiki keeps every nowrap label inside its own box
+[234/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littleexplorer/wiki keeps every nowrap label inside its own box
+[235/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littleouting keeps every nowrap label inside its own box
+[236/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 babyoasis keeps every nowrap label inside its own box
+[237/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:76:3 › RWD-04 @p1 littleguard keeps every nowrap label inside its own box
+[238/252] [mobile-320] › e2e/specs/rwd.e2e.spec.ts:108:1 › RWD-03 @p1 an open modal fits the viewport and scrolls its own content
+[239/252] [mobile-320] › e2e/specs/seo.e2e.spec.ts:25:1 › SEO-01 @p0 robots.txt disallows every route that requires signing in
+[240/252] [mobile-320] › e2e/specs/seo.e2e.spec.ts:41:1 › SEO-01 @p0 a gated service root with public pages below it is anchored
+[241/252] [mobile-320] › e2e/specs/seo.e2e.spec.ts:59:1 › SEO-02 @p0 sitemap.xml lists exactly the indexable pages
+[242/252] [mobile-320] › e2e/specs/seo.e2e.spec.ts:72:1 › SEO-03 @p1 each public route is served its own prerendered head
+[243/252] [mobile-320] › e2e/specs/smoke.e2e.spec.ts:26:1 › HARNESS-01 @p0 BabyOasis loads, with its search input and map clusters
+[244/252] [mobile-320] › e2e/specs/wiki.e2e.spec.ts:44:3 › WIKI-01 @p0 littlesteps/baby-wiki lists all 15 of its articles
+[245/252] [mobile-320] › e2e/specs/wiki.e2e.spec.ts:44:3 › WIKI-01 @p0 littlebloom/wiki lists all 25 of its articles
+[246/252] [mobile-320] › e2e/specs/wiki.e2e.spec.ts:44:3 › WIKI-01 @p0 littleexplorer/wiki lists all 45 of its articles
+[247/252] [mobile-320] › e2e/specs/wiki.e2e.spec.ts:52:1 › WIKI-02 @p1 an article expands and collapses in place, without touching the URL
+[248/252] [mobile-320] › e2e/specs/wiki.e2e.spec.ts:88:1 › WIKI-03 @p1 searching narrows the list and clearing restores it
+[249/252] [mobile-320] › e2e/specs/wiki.e2e.spec.ts:106:1 › WIKI-03 @p1 a category chip narrows the list and 全部 restores it
+[250/252] [mobile-320] › e2e/specs/wiki.e2e.spec.ts:127:1 › WIKI-04 @p1 the care guide renders its guides signed out
+[251/252] [mobile-320] › e2e/specs/wiki.e2e.spec.ts:142:1 › WIKI-04 @p1 the sleep guide renders its methods and ritual signed out
+[252/252] [mobile-320] › e2e/specs/wiki.e2e.spec.ts:154:1 › WIKI-05 @p1 a cross-wiki hit lands on the other wiki with the keyword kept
+  252 passed (4.1m)
