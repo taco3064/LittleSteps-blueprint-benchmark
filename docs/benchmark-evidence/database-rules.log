@@ -1,0 +1,187 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> littlesteps@0.0.1 test:rules
+> firebase emulators:exec --only database --project demo-littlesteps "node scripts/testRules.cjs"
+
+i  emulators: Starting emulators: database
+i  emulators: Detected demo project ID "demo-littlesteps", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  database: downloading firebase-database-emulator-v4.11.2.jar...
+
+i  database: Database Emulator logging to database-debug.log
+i  Running script: node scripts/testRules.cjs
+
+建立與讀取
+  ✓ 建立者把自己寫進 members，才建得起來
+  ✓ 沒把自己寫進 members 的建立被擋下（否則任何人都能在任意 id 塞資料）
+  ✓ 成員讀得到孩子的資料
+  ✓ 非成員讀不到孩子的資料
+
+用代碼加入：joinOpen 是開關
+  ✓ 分享沒開時，拿著代碼也加不進來
+  ✓ 成員可以打開分享
+  ✓ 分享開著時，拿著代碼的人把自己加進來
+  ✓ 加入之後讀得到
+
+紀錄與索引
+  ✓ 成員寫得進 childRecords
+  ✓ 非成員讀不到 childRecords
+  ✓ 非成員寫不進 childRecords
+  ✓ 任何登入者查得到代碼存不存在
+  ✓ 成員補得上索引
+  ✓ 非成員寫不了索引
+
+收回存取權
+  ✓ 成員可以移除另一個成員
+  ✓ 被移除之後就讀不到了
+  ✓ 關掉分享
+  ✓ 關掉之後，手上還有代碼的人也回不來
+  ✓ 非成員動不了別人的成員資格
+  ✓ 建立者是唯一的成員時走不掉——只剩「整份刪掉」這條路
+  ✓ 建立者離開：名單上還有另一位成員，就刪得掉自己的成員資格
+  ✓ 最後一位成員也走不掉，即使他不是建立者——成員數歸零就是一份沒有人碰得到的紀錄
+  ✓ 成員移除得掉建立者，只要自己還留在名單上
+
+欄位驗證
+  ✓ 部分更新不必重送整份資料
+  ✓ 寫進度不會被上層的 validate 擋住
+  ✓ 整份覆寫時少了 createdBy 就不給寫
+  ✓ 成員資格只能是 true
+
+意見回饋
+  ✓ 寫自己的回饋：回饋與 lastFeedbackAt 同一筆寫入
+  ✓ 從沒寫過任何東西的新帳號，第一則回饋直接寫得進去
+  ✓ 一分鐘內的第二則被擋下
+  ✓ 距上一則超過一分鐘就又寫得進去
+  ✓ 同一筆更新裡沒帶 lastFeedbackAt 的回饋寫不進去（迴圈灌回饋的寫法）
+  ✓ 節流窗口內刪不掉自己的 lastFeedbackAt（刪戳記再送一則就是那個繞法）
+  ✓ 刪掉戳記再送一則，一分鐘內照樣被擋（審查時抓到的繞法，整段照做一次）
+  ✓ 戳記過了節流窗口就刪得掉（刪帳號要清得掉 users/{uid}）
+  ✓ 從沒送過回饋的帳號也刪得掉這條不存在的路徑（刪帳號一律帶上它）
+  ✓ 戳記是客戶端自己填的數字、不是伺服器的 now，就不給寫（否則填個未來的時間就能一直寫）
+  ✓ 不能冒用別人的 userId
+  ✓ 塞不認識的欄位進來會被擋
+  ✓ 回饋沒有人讀得到
+
+紀錄的形狀與大小
+  ✓ 完整的餵奶紀錄寫得進去
+  ✓ 睡眠紀錄連夜醒次數與備註一起寫得進去
+  ✓ 尿布紀錄寫得進去
+  ✓ type 不是 feeding／sleep／diaper 就不給寫
+  ✓ childId 指向別的孩子就不給寫
+  ✓ timestamp 不是字串就不給寫
+  ✓ 紀錄少了 data 就不給寫
+  ✓ 紀錄本身不是物件就不給寫
+  ✓ 紀錄上塞不認識的欄位會被擋
+  ✓ data 裡塞不認識的欄位會被擋
+  ✓ feedingType 不在清單裡就不給寫
+  ✓ amount 不是數字就不給寫
+  ✓ 備註超過 2000 字就不給寫
+  ✓ 只改一個欄位的部分更新照樣可以（編輯時間）
+  ✓ 只換掉 data 的部分更新照樣可以（按「醒了」結束睡眠）
+  ✓ 部分更新塞進不合法的值一樣被擋
+  ✓ 舊形狀的日誌（key 不等於 id、沒有 childId、沒有 createdAt）照樣改得動（handleWake 的寫法）
+  ✓ 部分更新也會用合併後的資料檢查 hasChildren：少了 type 的紀錄改不動
+  ✓ 完整的日記寫得進去
+  ✓ 日記內容超過 5000 字就不給寫
+  ✓ 日期不是 YYYY-MM-DD 就不給寫
+  ✓ mood 不在清單裡就不給寫
+  ✓ 日記上塞不認識的欄位會被擋
+  ✓ 只改內容的部分更新照樣可以
+  ✓ 舊形狀的日記（沒有 id、childId、createdAt）照樣改得動（updateDiaryEntry 的寫法）
+  ✓ 完整的成長紀錄寫得進去
+  ✓ 體重 900 公斤就不給寫
+  ✓ 體重是字串就不給寫
+  ✓ 百分位超過 100 就不給寫
+  ✓ percentile 裡塞不認識的欄位會被擋
+  ✓ 成長紀錄上塞不認識的欄位會被擋
+  ✓ 只改一個欄位的部分更新可以（updateRecord 的寫法）
+  ✓ 整筆重送、連舊的百分位一起，照樣可以
+  ✓ 沒有百分位的成長紀錄寫得進去（addRecord 的寫法）
+  ✓ 沒有百分位的紀錄補一項測量（updateRecord 的寫法）
+  ✓ 沒有百分位的紀錄再補一項、順手清掉備註
+  ✓ childRecords 底下只有三個集合，別的名字不給寫
+
+帳號節點
+  ✓ 把孩子加進自己的名單（joinChild 的寫法）
+  ✓ 從名單裡拿掉一個孩子（useUserChildren 清掉讀不到的 id）
+  ✓ 切換目前選取的孩子（setCurrentChild 的寫法）
+  ✓ 清掉目前選取的孩子是寫 null，不會被 validate 擋（useUserChildren 的自癒）
+  ✓ 名單裡的值只能是 true
+  ✓ currentChildId 不是字串就不給寫
+  ✓ currentChildId 超過 64 字就不給寫
+  ✓ 帳號節點塞不認識的欄位會被擋（沒有任何地方寫 email）
+
+孩子節點：建立與編輯
+  ✓ addChild 的整筆 fan-out：孩子本體（含空的進度物件）、名單、選取狀態一起寫
+  ✓ updateChild 的寫法：改預產期時一併改 pregnancyData 的兩個日期
+  ✓ recordBirth 的寫法：出生日、性別、isPregnancy=false、pregnancyData/status 一起改
+  ✓ 早產週數與天數寫得進去
+  ✓ 清掉早產週數是寫 null，不會被 validate 擋（updateChild 的寫法）
+  ✓ gender 不是 male／female 就不給寫
+  ✓ isPregnancy 不是布林值就不給寫
+  ✓ 出生週數低於 20 就不給寫（與 correctedAge 的範圍一致）
+  ✓ 出生週數高於 42 就不給寫
+  ✓ 出生週數是字串就不給寫
+  ✓ 出生天數超過 6 就不給寫
+  ✓ pregnancyData.status 不是 active／archived 就不給寫
+  ✓ pregnancyData 裡塞不認識的欄位會被擋
+  ✓ createdAt 超過 40 字就不給寫
+  ✓ id 超過 64 字就不給寫
+  ✓ 孩子節點塞不認識的欄位會被擋
+  ✓ 紀錄搬到 childRecords 之後，舊路徑 children/$childId/dailyLogs 不再收寫入
+
+孩子節點：每個子樹的形狀
+  ✓ 里程碑：達成時連日期一起寫（updateMilestoneProgress 的寫法）
+  ✓ 里程碑：取消達成時只剩 achieved=false
+  ✓ 里程碑：achieved 不是布林值就不給寫
+  ✓ 里程碑：日期不是 YYYY-MM-DD 的長度就不給寫
+  ✓ 里程碑：少了 achieved 就不給寫
+  ✓ 里程碑：塞不認識的欄位會被擋
+  ✓ 疫苗：一劑一筆（updateVaccineProgress 的寫法）
+  ✓ 疫苗：administered 不是布林值就不給寫
+  ✓ 疫苗：劑次裡塞不認識的欄位會被擋
+  ✓ 疫苗：疫苗底下只有 doses
+  ✓ 發展檢核：達成時連日期一起寫（updateDevelopmentProgress 的寫法）
+  ✓ 發展檢核：塞不認識的欄位會被擋
+  ✓ 乳牙：萌出時連日期一起寫（updateToothProgress 的寫法）
+  ✓ 乳牙：erupted 不是布林值就不給寫
+  ✓ 產檢：完成日期、院所、備註（upsertPrenatalRecord 的寫法）
+  ✓ 產檢：少了 completedDate 就不給寫
+  ✓ 產檢：備註超過 2000 字就不給寫
+  ✓ 產檢：塞不認識的欄位會被擋
+  ✓ 照護任務：整筆寫入（upsertCareTaskRecord 的寫法）
+  ✓ 照護任務：taskId 超過 64 字就不給寫
+  ✓ 照護任務：塞不認識的欄位會被擋
+  ✓ 副食品：完整一筆，含嘗試日期清單與過敏反應清單（addFoodTrial 的寫法）
+  ✓ 副食品：舊形狀的嘗試日期陣列整個重送照樣可以
+  ✓ 副食品：在舊的陣列節點上多記一天是一條 leaf（handleAddTrialDate 的寫法）
+  ✓ 副食品：拿掉一天是寫 null，舊的索引 key 也一樣（編輯表單的寫法）
+  ✓ 副食品：新紀錄的嘗試日期是日期集合（addFoodTrial 的寫法）
+  ✓ 副食品：日期 key 的值不是 true 就不給寫
+  ✓ 副食品：既不是日期也不是索引的 key 不給寫
+  ✓ 副食品：索引 key 的值是 true 就不給寫
+  ✓ 副食品：過敏反應裡塞不認識的欄位會被擋
+  ✓ 副食品：過敏嚴重度不在清單裡就不給寫
+  ✓ 副食品：喜好度不在五個值裡就不給寫
+  ✓ 副食品：hasAllergy 不是布林值就不給寫
+  ✓ 副食品：嘗試日期不是字串就不給寫
+  ✓ 副食品：食物名稱超過 100 字就不給寫
+  ✓ 副食品：塞不認識的欄位會被擋
+
+刪除：一次原子寫入
+  ✓ 建立者用一筆 multi-path 更新刪掉孩子、紀錄、索引與選取狀態（deleteChild 的寫法）
+  ✓ 先刪孩子再刪紀錄會失敗，所以客戶端必須用上面那一筆
+  ✓ 刪帳號：獨有的孩子整份刪掉、共用的只退出名單、帳號節點一起清掉（deleteAccountData 的寫法）
+
+別人的帳號
+  ✓ 讀不到別人的使用者節點
+  ✓ 寫不進別人的使用者節點
+  ✓ 寫不進別人的 lastFeedbackAt
+  ✓ 用別人的戳記交自己的回饋也不行
+
+145 項通過，0 項失敗
+✔  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  database: Stopping Database Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator

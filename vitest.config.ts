@@ -12,7 +12,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'happy-dom',
-    setupFiles: './src/test/setup.ts',
+    setupFiles: './test/setup',
     css: false,
     // e2e/ 的 *.spec.ts 是 Playwright 的案例，跑在真的瀏覽器裡。Vitest 預設會
     // 把整個 repo 的 *.spec.ts 都收進來，收到的當下就會因為找不到 Playwright
@@ -27,7 +27,7 @@ export default defineConfig({
       reporter: ['text', 'json', 'html'],
       exclude: [
         'node_modules/',
-        'src/test/',
+        'test/',
         '**/*.d.ts',
         '**/*.config.*',
         '**/mockData',
@@ -38,6 +38,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+      '~app': path.resolve(__dirname, './src'),
     },
   },
 });

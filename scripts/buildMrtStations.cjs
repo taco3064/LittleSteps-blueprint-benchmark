@@ -2,7 +2,7 @@
 'use strict';
 
 /**
- * 產生 src/babyoasis/data/mrtStations.json：全台捷運與輕軌車站座標。
+ * 產生 src/domain/mrtStations/mrtStations.json：全台捷運與輕軌車站座標。
  *
  * 為什麼需要這一份
  *   哺集乳室資料裡只有 56 個場所的名稱帶「捷運」，遠少於實際站數——家長要的
@@ -32,7 +32,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { execFileSync } = require('node:child_process');
 
-const OUT_FILE = path.join(__dirname, '..', 'src', 'babyoasis', 'data', 'mrtStations.json');
+const OUT_FILE = path.join(__dirname, '..', 'src', 'domain', 'mrtStations', 'mrtStations.json');
 
 /** 公共 Overpass 實例會限流，主要那台忙碌時換下一台，不要讓整份資料生不出來。 */
 const ENDPOINTS = [
@@ -132,7 +132,11 @@ function main() {
     throw new Error(`只取得 ${stations.length} 站，低於預期的 ${MIN_STATIONS}，中止以免產出殘缺資料`);
   }
   // ref 只是排序用的中間值，不寫進產出。
-  const output = stations.map(({ ref, ...station }) => station);
+  const output = stations.map((station) => {
+    const outputStation = { ...station };
+    delete outputStation.ref;
+    return outputStation;
+  });
   fs.writeFileSync(OUT_FILE, `${JSON.stringify(output, null, 0)}\n`);
 
   const bySystem = {};

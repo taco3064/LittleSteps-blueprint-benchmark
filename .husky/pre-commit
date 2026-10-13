@@ -1,1 +1,3 @@
+npm run check
+npx vitest run
 npm run build

@@ -1,0 +1,20 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+blueprint doctor
+Scope: current-config adoption; this is not proof of a historical topology transformation.
+  ✓ blueprint.config.mjs present
+  ✓ no leftover reference, authoring, or stale contract files
+  ✓ eslint wired to emitLint
+  ✓ normal lint entrypoint reaches eslint
+  ✓ reachable eslint leg passes live
+      `eslint . --max-warnings 0` — 0 error(s), 0 warning(s)
+  ✓ import alias · typescript
+  ✓ import alias · bundler-runtime
+  ✓ import alias · package-subpath
+      the configured aliases are not package # subpaths
+  ✓ import alias · test-runner
+  ✓ emitted rules survive the merged eslint config (structural bans + canonical/dynamic policy + each active gate's carrier rule, one probe per governed position; thresholds, package-ownership entries, and a merged entry scoped to only part of a governed position are not compared)
+  ✓ architecture clean
+      726/728 source files inside architecture nets (outside: src/main.tsx, src/vite-env.d.ts — outside the declared architecture lint nets) · 17/17 optional gates active (structural boundary rules are always on); import analysis healthy (844/844 scanned files parsed)
+  ✓ lint suppressions ledger current (not in use)
+
+✓ Adoption complete — all 12 checks passed.

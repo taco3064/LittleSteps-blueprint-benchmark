@@ -1,0 +1,27 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+Scope: current-config adoption; this is not proof of a historical topology transformation.
+
+Architecture Report
+
+  · [owns-not-installed] src/hooks
+      Layer "hooks" owns "zustand", which is not in package.json — runway, not a todo: the ban is emitted and correct, it just has nothing to reach yet. Installing the package and dropping the declaration are both resolutions, and which one applies is the owner's call.
+  · [owns-not-installed] src/services
+      Layer "services" owns "axios", which is not in package.json — runway, not a todo: the ban is emitted and correct, it just has nothing to reach yet. Installing the package and dropping the declaration are both resolutions, and which one applies is the owner's call.
+  · [owns-not-installed] src/services
+      Layer "services" owns "firebase/**", which is not in package.json — runway, not a todo: the ban is emitted and correct, it just has nothing to reach yet. Installing the package and dropping the declaration are both resolutions, and which one applies is the owner's call.
+
+0 error(s), 0 warning(s), 3 note(s)
+
+How this graph was read: static import/export and quoted require targets come from
+source syntax; dynamic import targets come from a parsed AST and lexical scope when
+they reduce to a proven string (including immutable local strings, concatenation, and
+template substitution). Runtime-dependent expressions, individual names behind
+`import * as`, and import-like text inside a string remain outside the graph — read
+it as a survey, not as the last word on any one import. ESLint applies the same bounded
+dynamic evaluation while enforcing architectural boundaries.
+Import analysis: healthy — parsed 844 of 844 scanned source file(s).
+This scan left 0 runtime-dependent dynamic import(s)
+unresolved and encountered 0 file parse failure(s); neither
+case becomes an edge or a verified legal dependency.
+
+Coverage: 726/728 source files inside architecture nets (outside: src/main.tsx, src/vite-env.d.ts — outside the declared architecture lint nets) · 17/17 optional gates active (structural boundary rules are always on)

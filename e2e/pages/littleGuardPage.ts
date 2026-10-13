@@ -1,6 +1,6 @@
 import type { Locator, Page } from '@playwright/test';
-import { ROUTE_PATH } from '../../src/types/routes';
-import { AGE_LABEL } from '../../src/littleguard/utils/radar';
+import { ROUTE_PATH } from '../../src/domain/routes';
+import { AGE_LABEL } from '../../src/domain/radar';
 import { SCROLL_ROW } from '../fixtures/testIds';
 
 /**

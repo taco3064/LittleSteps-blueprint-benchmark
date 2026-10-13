@@ -8,8 +8,11 @@ fork 自 **[Sean Chou](https://github.com/sean1093)** 的 [LittleSteps](https://
 參與、推薦或背書 Blueprint。本專案並非 LittleSteps 的官方版本。
 
 本次 Benchmark 將以大型真實應用程式，對 Blueprint 的 MF / LF 資料夾結構轉換
-進行壓力測試，並保留原始產品程式碼作為對照基準。本輪初始化只新增文件說明並
-準備分支，尚未執行任何 MF / LF 轉換。
+進行壓力測試，並在 `master` 保留原始產品程式碼作為對照基準。
+本分支進行 LF 轉換；MF 分支仍保留共同基準。
+
+LF 的規則全部使用 `error`，禁止棘輪、停用註解與提高門檻。
+操作紀錄、工具版本與驗證證據見 [LF 測試報告](docs/benchmark-lf-report.md)。
 
 ## Benchmark 分支
 
@@ -19,19 +22,19 @@ fork 自 **[Sean Chou](https://github.com/sean1093)** 的 [LittleSteps](https://
 | `benchmark/mf` | 存放 MF 轉換結果與驗證證據。 |
 | `benchmark/lf` | 存放 LF 轉換結果與驗證證據。 |
 
-兩條測試分支皆從 `master` 上的同一個初始化 commit 建立。
-該 commit 的前一個 commit 為原始程式碼基準
+兩條測試分支的共同基準為 `6bd4b1d98e971a290abf29423fb40ba5615264c4`。
+保留的原始產品歷史可追溯至
 [`8e7e2c766cd421f8c8e919bbde1d86c8f4ffb0b7`](https://github.com/sean1093/LittleSteps/commit/8e7e2c766cd421f8c8e919bbde1d86c8f4ffb0b7)。
 **禁止將轉換結果合併回 `master`。**
 
 ## 測試隔離與證據紀錄
 
 - 只在本 Benchmark 儲存庫作業，不修改原始儲存庫。
-- 初始化不修改既有產品功能。
+- LF 重構保留既有產品功能、資料與測試，不加入新的產品需求。
 - 不部署至正式環境，也不使用原專案的正式環境憑證。
 - 保留原始 Git 歷史、授權文件與作者資訊。
 - 後續每次 MF / LF 測試，都必須在對應分支記錄確切的 Blueprint 版本、完整基準
   commit SHA、操作步驟與指令、轉換結果，以及驗證證據（包含失敗與限制）。
-- 初始化 commit 使用 `[skip ci]`，避免觸發沿用自原專案的部署流程。這不是永久的
-  部署防護：後續測試前，須先確保原有正式環境工作流程不會執行，並使用隔離的
-  測試服務或模擬器。
+- 此分支已限制原有部署、發布與資料更新流程只能在原始儲存庫執行；本 fork 不會執行。
+- 執行 `npm ci`、`npm run check`、`npx vitest run` 與 `npm run test:e2e` 驗證。
+  瀏覽器測試使用明確的假 Firebase 設定，資料庫規則測試使用 `demo-` 模擬器。

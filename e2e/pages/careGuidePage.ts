@@ -1,5 +1,5 @@
 import type { Locator, Page } from '@playwright/test';
-import { ROUTE_PATH } from '../../src/types/routes';
+import { ROUTE_PATH } from '../../src/domain/routes';
 
 /**
  * The care guide — one of the two LittleSteps guides that are public, and the

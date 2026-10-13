@@ -34,6 +34,7 @@ jobs:
     # `branches: [master]` matches the *head* branch — so without this a fork's
     # pull request would tag unmerged code.
     if: >-
+      github.repository == 'sean1093/LittleSteps' &&
       github.event.workflow_run.conclusion == 'success' &&
       github.event.workflow_run.event == 'push'
     runs-on: ubuntu-latest

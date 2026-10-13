@@ -1,0 +1,752 @@
+[
+  {
+    "width": 390,
+    "route": "/",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      4705
+    ],
+    "afterSize": [
+      1073,
+      4705
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/about",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      12136
+    ],
+    "afterSize": [
+      1073,
+      12136
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      3806
+    ],
+    "afterSize": [
+      1073,
+      3806
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps/dashboard",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      3806
+    ],
+    "afterSize": [
+      1073,
+      3806
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps/milestones",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      3806
+    ],
+    "afterSize": [
+      1073,
+      3806
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps/care-guide",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      8423
+    ],
+    "afterSize": [
+      1073,
+      8423
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps/vaccine-tracking",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      3806
+    ],
+    "afterSize": [
+      1073,
+      3806
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps/complementary-food",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      3806
+    ],
+    "afterSize": [
+      1073,
+      3806
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps/daily-log",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      3806
+    ],
+    "afterSize": [
+      1073,
+      3806
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps/growth-charts",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      3806
+    ],
+    "afterSize": [
+      1073,
+      3806
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps/sleep-training",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      10931
+    ],
+    "afterSize": [
+      1073,
+      10931
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps/sleep-analysis",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      3806
+    ],
+    "afterSize": [
+      1073,
+      3806
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps/baby-wiki",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      5616
+    ],
+    "afterSize": [
+      1073,
+      5616
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps/clinic-summary",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      3806
+    ],
+    "afterSize": [
+      1073,
+      3806
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlesteps/report",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      3806
+    ],
+    "afterSize": [
+      1073,
+      3806
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlebloom",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      2321
+    ],
+    "afterSize": [
+      1073,
+      2321
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlebloom/prenatal",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      2321
+    ],
+    "afterSize": [
+      1073,
+      2321
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littlebloom/wiki",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      8627
+    ],
+    "afterSize": [
+      1073,
+      8627
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littleexplorer",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      2321
+    ],
+    "afterSize": [
+      1073,
+      2321
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littleexplorer/reminders",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      2321
+    ],
+    "afterSize": [
+      1073,
+      2321
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littleexplorer/diary",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      2321
+    ],
+    "afterSize": [
+      1073,
+      2321
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littleexplorer/wiki",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      17113
+    ],
+    "afterSize": [
+      1073,
+      17113
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/babyoasis",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      2321
+    ],
+    "afterSize": [
+      1073,
+      2321
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littleguard",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      3223
+    ],
+    "afterSize": [
+      1073,
+      3223
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      5118
+    ],
+    "afterSize": [
+      880,
+      5118
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/about",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      13690
+    ],
+    "afterSize": [
+      880,
+      13690
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      4114
+    ],
+    "afterSize": [
+      880,
+      4114
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps/dashboard",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      4114
+    ],
+    "afterSize": [
+      880,
+      4114
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps/milestones",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      4114
+    ],
+    "afterSize": [
+      880,
+      4114
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps/care-guide",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      9248
+    ],
+    "afterSize": [
+      880,
+      9248
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps/vaccine-tracking",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      4114
+    ],
+    "afterSize": [
+      880,
+      4114
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps/complementary-food",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      4114
+    ],
+    "afterSize": [
+      880,
+      4114
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps/daily-log",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      4114
+    ],
+    "afterSize": [
+      880,
+      4114
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps/growth-charts",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      4114
+    ],
+    "afterSize": [
+      880,
+      4114
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps/sleep-training",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      11767
+    ],
+    "afterSize": [
+      880,
+      11767
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps/sleep-analysis",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      4114
+    ],
+    "afterSize": [
+      880,
+      4114
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps/baby-wiki",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      5748
+    ],
+    "afterSize": [
+      880,
+      5748
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps/clinic-summary",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      4114
+    ],
+    "afterSize": [
+      880,
+      4114
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlesteps/report",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      4114
+    ],
+    "afterSize": [
+      880,
+      4114
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlebloom",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      2321
+    ],
+    "afterSize": [
+      880,
+      2321
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlebloom/prenatal",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      2321
+    ],
+    "afterSize": [
+      880,
+      2321
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littlebloom/wiki",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      9859
+    ],
+    "afterSize": [
+      880,
+      9859
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littleexplorer",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      2321
+    ],
+    "afterSize": [
+      880,
+      2321
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littleexplorer/reminders",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      2321
+    ],
+    "afterSize": [
+      880,
+      2321
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littleexplorer/diary",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      2321
+    ],
+    "afterSize": [
+      880,
+      2321
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littleexplorer/wiki",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      19671
+    ],
+    "afterSize": [
+      880,
+      19671
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/babyoasis",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      2321
+    ],
+    "afterSize": [
+      880,
+      2321
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littleguard",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      3278
+    ],
+    "afterSize": [
+      880,
+      3278
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "route": "/littleouting",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      1073,
+      24340
+    ],
+    "afterSize": [
+      1073,
+      24340
+    ],
+    "pageErrors": []
+  },
+  {
+    "width": 320,
+    "route": "/littleouting",
+    "identical": true,
+    "sameText": true,
+    "beforeSize": [
+      880,
+      28795
+    ],
+    "afterSize": [
+      880,
+      28795
+    ],
+    "pageErrors": []
+  }
+]
