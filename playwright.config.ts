@@ -1,3 +1,4 @@
+import { E2E_TEST_FILES } from './e2e/testFiles';
 import { defineConfig, devices } from '@playwright/test';
 
 /**
@@ -27,7 +28,7 @@ const BASE_URL = `http://127.0.0.1:${PREVIEW_PORT}`;
 /**
  * Dummy Firebase credentials for the built app.
  *
- * `src/lib/firebase.ts` calls `initializeApp()` at module load, so with these
+ * `src/platform/services/firebase` calls `initializeApp()` at module load, so with these
  * unset the SDK throws `auth/invalid-api-key` and the page renders blank —
  * there is no such thing as running this app with no Firebase configuration.
  * No child's record is ever requested: Phase 1 only visits public routes, and
@@ -70,7 +71,8 @@ const FIREBASE_E2E_ENV = {
 const MOBILE_CHROMIUM = devices['Pixel 5'];
 
 export default defineConfig({
-  testDir: './e2e/specs',
+  testDir: '.',
+  testMatch: E2E_TEST_FILES.map(file => '**/' + file),
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
 

@@ -16,7 +16,7 @@ npm run test:e2e                      # both viewports, headless
 npm run test:e2e:p0                   # the merge-blocking subset
 npm run test:e2e -- --ui              # pick and step through cases locally
 npm run test:e2e -- --project mobile-320
-npm run test:e2e -- e2e/specs/smoke.spec.ts
+npm run test:e2e -- --grep 'smoke'
 npx playwright show-report            # the HTML report from the last run
 ```
 
@@ -33,15 +33,13 @@ tag in `.github/workflows/ci.yml` in the same commit.
 
 ## Layout
 
-```
-e2e/
-├── fixtures/   test object, route blocking, clock, layout invariants, testids
-├── pages/      page objects — selectors and navigation only, no assertions
-├── specs/      the cases, named after the catalogue IDs they cover
-└── README.md
-```
+Browser specs live beside the application source or configuration they exercise.
+`e2e/testFiles.ts` lists their paths for Playwright and excludes those same files
+from Vitest. This keeps both runners explicit while retaining all 252 cases.
+`e2e/fixtures/` owns the test object, route blocking, clock and layout helpers;
+`e2e/pages/` owns selectors and navigation.
 
-Import `test` and `expect` from `../fixtures/test`, never from
+Import `test` and `expect` from `e2e/fixtures/test` (using the relative path from the spec), never from
 `@playwright/test`. That object blocks the third-party hosts in
 `fixtures/blockedHosts.ts` — map tiles, `firebase.googleapis.com`,
 `*.google-analytics.com`, `apis.google.com` and the reCAPTCHA paths on

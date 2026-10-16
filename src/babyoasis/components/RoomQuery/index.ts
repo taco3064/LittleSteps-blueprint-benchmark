@@ -1,0 +1,1 @@
+export { RoomQuery } from './RoomQuery';

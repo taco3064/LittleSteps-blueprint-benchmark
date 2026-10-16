@@ -35,7 +35,7 @@
  *   他區同名道路）。座標因此一律採用國健署自己的定位結果。
  *
  * 設施明細兩個來源都沒有，只有臺北市開放資料曾提供，保存在
- * src/babyoasis/data/facilities.json。那是這條管線唯一無法重新取得的
+ * src/babyoasis/domain/facilities/facilities.json。那是這條管線唯一無法重新取得的
  * 資產，所以進版控；其餘來源隨時可重新下載。
  *
  * 用法
@@ -49,7 +49,7 @@ const os = require('os');
 const { execFileSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
-const FACILITIES = path.join(ROOT, 'src/babyoasis/data/facilities.json');
+const FACILITIES = path.join(ROOT, 'src/babyoasis/domain/facilities/facilities.json');
 const OUTPUT = path.join(ROOT, 'public/data/nursingRooms.json');
 /**
  * 資料集的產生日期與出處，另外寫成一個小檔。
@@ -62,7 +62,7 @@ const OUTPUT = path.join(ROOT, 'public/data/nursingRooms.json');
  * 少了這個檔，關於頁只能拿 git 的提交日期當查證日期，而那個日期沒有任何測試
  * 看得到。
  */
-const META_OUTPUT = path.join(ROOT, 'src/babyoasis/data/nursingRoomsMeta.json');
+const META_OUTPUT = path.join(ROOT, 'src/knowledge/domain/nursingRoomsMeta/nursingRoomsMeta.json');
 
 const MAP_ENDPOINT = 'https://mammy.hpa.gov.tw/Map/AjaxBreastfeedingRoom';
 const ODS_URL =

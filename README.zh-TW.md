@@ -8,8 +8,9 @@ fork 自 **[Sean Chou](https://github.com/sean1093)** 的 [LittleSteps](https://
 參與、推薦或背書 Blueprint。本專案並非 LittleSteps 的官方版本。
 
 本次 Benchmark 將以大型真實應用程式，對 Blueprint 的 MF / LF 資料夾結構轉換
-進行壓力測試，並保留原始產品程式碼作為對照基準。本輪初始化只新增文件說明並
-準備分支，尚未執行任何 MF / LF 轉換。
+進行壓力測試，並保留原始產品程式碼作為對照基準。本分支使用正式發布的
+Blueprint **4.2.0** 完成 MF 改造；架構決策、驗證、修復紀錄與限制詳見
+[MF 測試報告](docs/MF_BENCHMARK.md)。LF 測試另行進行。
 
 ## Benchmark 分支
 

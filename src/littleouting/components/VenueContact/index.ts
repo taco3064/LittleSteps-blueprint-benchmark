@@ -1,0 +1,1 @@
+export { VenueContact } from './VenueContact';

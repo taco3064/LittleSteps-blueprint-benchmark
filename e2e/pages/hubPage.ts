@@ -1,6 +1,7 @@
 import type { Locator, Page as BrowserPage } from '@playwright/test';
-import { ROUTE_PATH } from '../../src/types/routes';
-import { SERVICE_THEME, type ServiceId } from '../../src/common/ui/serviceTheme';
+import { ROUTE_PATH } from "~app/portal/domain/routes";
+import { SERVICE_THEME } from '~app/portal/components/ServiceTheme';
+import { type ServiceId } from '~app/portal/domain/serviceCatalogue';
 
 /**
  * The entry point at `/` — the hub that lists all six services.

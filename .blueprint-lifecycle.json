@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "blueprint": "4.2.0",
+  "provenance": "complete",
+  "operations": [],
+  "pending": null,
+  "applications": {
+    ".": {
+      "provenance": [
+        {
+          "kind": "generated",
+          "path": "blueprint-authoring.md"
+        },
+        {
+          "kind": "generated",
+          "path": ".claude/commands/blueprint-author.md"
+        },
+        {
+          "kind": "generated",
+          "path": "docs/architecture-handbook.md"
+        },
+        {
+          "kind": "section",
+          "path": "AGENTS.md",
+          "created": true
+        },
+        {
+          "kind": "generated",
+          "path": "eslint.config.blueprint.mjs"
+        }
+      ]
+    }
+  }
+}

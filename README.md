@@ -11,8 +11,9 @@ version of LittleSteps.
 
 The benchmark will stress-test Blueprint's MF / LF folder-structure conversions
 on a large, real-world application, keeping the original product code as the
-comparison baseline. This initialization adds documentation and prepares the
-branches only; no MF / LF conversion has been performed.
+comparison baseline. This branch contains the MF conversion using published Blueprint **4.2.0**.
+See [the MF report](docs/MF_BENCHMARK.md) for architecture decisions, verification,
+failures found and remaining limitations. The LF run is separate.
 
 ## Benchmark branches
 

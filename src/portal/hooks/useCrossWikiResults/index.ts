@@ -1,0 +1,1 @@
+export { useCrossWikiResults } from './useCrossWikiResults';

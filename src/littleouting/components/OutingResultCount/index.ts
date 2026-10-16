@@ -1,0 +1,1 @@
+export { OutingResultCount } from './OutingResultCount';

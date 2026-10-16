@@ -1,5 +1,5 @@
-import { requiresAuth } from '../../src/common/routePolicy';
-import { ROUTE_PATH, type Page } from '../../src/types/routes';
+import { requiresAuth } from "~app/portal/domain/routePolicy";
+import { ROUTE_PATH, type Page } from "~app/portal/domain/routes";
 
 /**
  * The two route lists, derived from the product's own allowlist.

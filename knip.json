@@ -1,0 +1,6 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "entry": ["scripts/*.{cjs,mjs}", "blueprint.config.mjs"],
+  "project": ["src/**/*.{ts,tsx,css}", "scripts/*.{cjs,mjs}", "e2e/**/*.ts", "*.{ts,mjs,cjs}"],
+  "include": ["files"]
+}

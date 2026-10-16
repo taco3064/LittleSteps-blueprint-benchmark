@@ -1,5 +1,5 @@
 import type { Locator, Page } from '@playwright/test';
-import { ROUTE_PATH } from '../../src/types/routes';
+import { ROUTE_PATH } from "~app/portal/domain/routes";
 import { MAP_CLUSTER_TESTID, MAP_TESTID, SCROLL_ROW } from '../fixtures/testIds';
 
 /**

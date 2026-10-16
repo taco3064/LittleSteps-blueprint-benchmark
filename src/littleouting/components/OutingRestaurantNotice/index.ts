@@ -1,0 +1,1 @@
+export { OutingRestaurantNotice } from './OutingRestaurantNotice';

@@ -1,5 +1,5 @@
 import type { Locator, Page as BrowserPage } from '@playwright/test';
-import { ROUTE_PATH, type Page } from '../../src/types/routes';
+import { ROUTE_PATH, type Page } from "~app/portal/domain/routes";
 import { PUBLIC_ROUTES } from '../fixtures/routes';
 import { BabyOasisPage } from './babyOasisPage';
 import { CareGuidePage } from './careGuidePage';

@@ -6,7 +6,7 @@ on:
   # P1 subset is what blocks the merge; the plan puts the cosmetic cases here so
   # they are still run somewhere rather than only ever locally.
   push:
-    branches: [master]
+    branches: [master, benchmark/mf]
 
 permissions:
   contents: read

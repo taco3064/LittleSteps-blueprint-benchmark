@@ -1,7 +1,7 @@
 import type { Locator, Page as BrowserPage } from '@playwright/test';
-import { ROUTE_PATH, type Page } from '../../src/types/routes';
-import { serviceOf } from '../../src/common/routePolicy';
-import { SERVICE_THEME } from '../../src/common/ui/serviceTheme';
+import { ROUTE_PATH, type Page } from "~app/portal/domain/routes";
+import { serviceOf } from "~app/portal/domain/routePolicy";
+import { SERVICE_THEME } from '~app/portal/components/ServiceTheme';
 
 /**
  * What a signed-out visitor gets on a route that requires signing in: that

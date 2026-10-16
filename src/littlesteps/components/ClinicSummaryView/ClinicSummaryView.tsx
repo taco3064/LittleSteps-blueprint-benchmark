@@ -1,0 +1,14 @@
+export { ClinicSummaryView1 } from './ClinicSummaryView1';
+export { ClinicSummaryView10 } from './ClinicSummaryView10';
+export { ClinicSummaryView11 } from './ClinicSummaryView11';
+export { ClinicSummaryView12 } from './ClinicSummaryView12';
+export { ClinicSummaryView13 } from './ClinicSummaryView13';
+export { ClinicSummaryView2 } from './ClinicSummaryView2';
+export { ClinicSummaryView3 } from './ClinicSummaryView3';
+export { ClinicSummaryView4 } from './ClinicSummaryView4';
+export { ClinicSummaryView5 } from './ClinicSummaryView5';
+export { ClinicSummaryView6 } from './ClinicSummaryView6';
+export { ClinicSummaryView7 } from './ClinicSummaryView7';
+export { ClinicSummaryView8 } from './ClinicSummaryView8';
+export { ClinicSummaryView9 } from './ClinicSummaryView9';
+export { ClinicSummaryView } from './ClinicSummaryViewImplementation';

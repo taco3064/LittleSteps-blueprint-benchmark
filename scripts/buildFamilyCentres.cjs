@@ -19,7 +19,7 @@
  *   而這個專案沒有這種依賴，為了 234 筆資料引進一個原生依賴不划算。把擷取
  *   結果釘成 TSV 有三個好處：建置可重現（同一份 TSV 永遠產出同一份 JSON）、
  *   資料能在 diff 裡被人眼審（PDF 不能）、以及下一版名冊出來時能一眼看出
- *   哪幾列變了。這和 src/babyoasis/data/facilities.json 進版控的理由一致：
+ *   哪幾列變了。這和 src/babyoasis/domain/facilities/facilities.json 進版控的理由一致：
  *   無法在建置時穩定重新取得的資產就釘住，能重新下載的就不釘。
  *   育兒友善園是 JSON API，隨時可重抓，所以不釘，由本腳本現抓。
  *
@@ -34,7 +34,7 @@
  *   保證了免費、家長全程陪同、室內、教玩具借閱這四件事，所以每一館都掛上
  *   這四個標籤；其餘設施（尿布台、哺乳室、停車場…）一律不掛——沒有來源就
  *   不能寫，猜出來的設施標籤會讓家長帶著孩子白跑一趟。
- *   needsBooking 只掛在 src/littleouting/data/centreAccess.ts 查證到「入館
+ *   needsBooking 只掛在 src/littleouting/domain/centreAccess/centreAccess.ts 查證到「入館
  *   須先預約」的縣市；能現場排隊的縣市不掛，因為那會嚇退不想預約的家長。
  *
  * 關於 id 的壽命
@@ -86,11 +86,11 @@ const EXPECTED_TOTAL = Object.values(EXPECTED_BY_CITY).reduce((a, b) => a + b, 0
 const BASE_TAGS = ['free', 'guardianRequired', 'indoor', 'toyLending'];
 
 /**
- * 查證到「入館須先預約」的縣市，依 src/littleouting/data/centreAccess.ts。
+ * 查證到「入館須先預約」的縣市，依 src/littleouting/domain/centreAccess/centreAccess.ts。
  *
  * 這份名單和那個 TS 檔重複，是模組邊界逼出來的：本腳本是 CommonJS，讀不到
  * .ts。所以不靠自律，改用測試把兩邊釘在一起——
- * src/littleouting/data/familyCentres.test.ts 的「needsBooking 只出現在
+ * src/littleouting/services/family_centres/family_centres.test.ts 的「needsBooking 只出現在
  * centreAccess 查證到預約報名制的縣市」會比對產出的標籤與 centreAccess 裡
  * booking.value 開頭是不是「預約報名制」，任一邊改了另一邊沒跟上就會紅。
  */
@@ -329,12 +329,12 @@ function main() {
     '\n提醒：政府資料開放授權條款第 1 版要求顯名標示，' +
       '未依格式標示者視為自始未取得授權。\n' +
       '      UI 必須逐字顯示 CENTRE_DATA_ATTRIBUTION' +
-      '（src/littleouting/data/centreAccess.ts）。',
+      '（src/littleouting/domain/centreAccess/centreAccess.ts）。',
   );
 }
 
 // 標示字串不放在這裡：這是 CommonJS 建置腳本，前端無法 import，
-// 兩邊各留一份必然會走鐘。唯一來源是 src/littleouting/data/centreAccess.ts
+// 兩邊各留一份必然會走鐘。唯一來源是 src/littleouting/domain/centreAccess/centreAccess.ts
 // 的 CENTRE_DATA_ATTRIBUTION，那是 UI 真的讀得到的地方。
 
 main();

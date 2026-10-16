@@ -1,0 +1,1 @@
+export { RadarAgeBands } from './RadarAgeBands';

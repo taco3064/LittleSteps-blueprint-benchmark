@@ -1,0 +1,1 @@
+export { RoomFilterChips } from './RoomFilterChips';

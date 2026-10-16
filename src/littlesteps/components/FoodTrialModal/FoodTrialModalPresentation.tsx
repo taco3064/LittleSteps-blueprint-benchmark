@@ -1,0 +1,10 @@
+export { FoodTrialModalPresentation1 } from './FoodTrialModalPresentation1';
+export { FoodTrialModalPresentation2 } from './FoodTrialModalPresentation2';
+export { FoodTrialModalPresentation3 } from './FoodTrialModalPresentation3';
+export { FoodTrialModalPresentation4 } from './FoodTrialModalPresentation4';
+export { FoodTrialModalPresentation5 } from './FoodTrialModalPresentation5';
+export { FoodTrialModalPresentation6 } from './FoodTrialModalPresentation6';
+export { FoodTrialModalPresentation7 } from './FoodTrialModalPresentation7';
+export { FoodTrialModalPresentation8 } from './FoodTrialModalPresentation8';
+export { FoodTrialModalPresentation9 } from './FoodTrialModalPresentation9';
+export { FoodTrialModalPresentation } from './FoodTrialModalPresentationImplementation';

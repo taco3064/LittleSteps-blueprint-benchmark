@@ -15,28 +15,21 @@ to work in the repo.
 Six services share one shell, one design system and one data layer. Each keeps
 its own palette and its own navigation shape.
 
-```
-src/
-├── common/          shared by all six services
-│   ├── ui/          THE design system — read before writing any UI
-│   ├── components/  Sidebar, ModalFrame, modals, wiki browser
-│   ├── landing/     entry point + per-service intro pages
-│   ├── hooks/       useChildStore + Firebase child hooks
-│   └── routePolicy.ts
-├── littlesteps/     pages/ components/<feature>/ hooks/ data/
-├── littlebloom/     pages/ components/ data/ utils/
-├── littleexplorer/  pages/ components/ hooks/ data/ utils/
-├── littleouting/    venue page + card, centre + restaurant data, checklist
-├── babyoasis/       map page + spatial index
-├── littleguard/     disease radar: board + drawer, fully public, no Firebase
-├── contexts/  lib/  types/
-├── App.tsx          path routing, shell, lazy pages
-└── index.css        design tokens as classes
-```
+The architecture contract is `blueprint.config.mjs`; read `AGENTS.md`,
+`docs/architecture-handbook.md` and the installed Blueprint agent contract before
+changing placement. Module roots compose use cases; inner layers are
+`components → hooks → contexts → services → domain`.
 
-There is no `src/pages/`, `src/components/` or `src/hooks/` at the root — code
-lives under the service that owns it, or in `common/` if two or more services
-need it. Put new shared UI in `common/ui/`.
+The six product modules own their workflows. `family` owns shared family records
+and access policy, `account` owns account management, `feedback` owns submissions,
+`knowledge` owns parenting reference content, and `portal` owns product entry,
+navigation and discovery. `platform` contains product-neutral infrastructure and
+presentation primitives. `app` composes providers and routes.
+
+Presentation-only code belongs in components even with a single consumer.
+Cross-boundary imports use `~app` public unit entries. Shared consumption does not
+make domain-owned code neutral. Do not recreate `common/`, `utils/` or a shared
+business catch-all.
 
 ## Auth model
 
@@ -44,7 +37,7 @@ need it. Put new shared UI in `common/ui/`.
 There is no guest mode and no LocalStorage fallback for child data — do not add
 one.
 
-`common/routePolicy.ts` is a **public allowlist**, not a "needs auth" blocklist.
+`portal/domain/routePolicy` is a **public allowlist**, not a "needs auth" blocklist.
 This app stores children's health data, so a page nobody classified must fail
 closed. Only the entry point, the about page, the three knowledge bases, the
 care guide, the sleep guide, LittleOuting, BabyOasis and LittleGuard are public.
@@ -92,7 +85,7 @@ Two consequences worth knowing before you touch the data layer:
 ## Rules for UI work
 
 The design system is in `tailwind.config.js`, `src/index.css` and
-`src/common/ui/`. The single most important rule:
+`src/platform/components/`. The single most important rule:
 
 > **Pastel shades are fills. Only `-dark` / `-ink` shades carry text.**
 
@@ -114,10 +107,10 @@ reach, e.g. Leaflet `divIcon`s — comment the token name there.
 | page shell | `.screen` + `.screen-body` or `.screen-body-wide` |
 | button | `.btn-primary` / `.btn-secondary` / `.btn-ghost` / `.btn-icon` |
 | filter chip | `.chip` + `.chip-on` |
-| page header | `common/ui/AppBar` |
-| "nothing here yet" | `common/ui/EmptyState` |
-| animation | `common/ui/motion` |
-| per-service colour | `SERVICE_THEME[id]` from `common/ui/serviceTheme` |
+| page header | `platform/components/AppBar` |
+| "nothing here yet" | `platform/components/EmptyState` |
+| animation | `platform/components/Motion` |
+| per-service colour | `SERVICE_THEME[id]` from `portal/components/ServiceTheme` |
 
 Two shadows, two radii, one page background, one column width per role. Adding
 a third of any of those is the failure mode this system exists to prevent — the
@@ -172,7 +165,7 @@ Hierarchy comes from type, spacing and one accent colour.
 
 ### Motion
 
-Short entrances, small offsets, nothing looping. Import from `common/ui/motion`
+Short entrances, small offsets, nothing looping. Import from `platform/components/Motion`
 — never define local variants. `prefers-reduced-motion` is handled globally in
 `index.css`.
 
@@ -234,3 +227,10 @@ reversed, and a LocalStorage guest mode that no longer exists. Where they
 conflict with this file or `README.md`, this file and the README win.
 `component-patterns.md` and `typescript-conventions.md` are still broadly
 accurate on structure and typing.
+
+## Reference data
+
+Static reference datasets live in each owning `domain/<unit>/data.ts` and are
+exported through the unit entry. The reference-date audit discovers these files
+recursively; new datasets must retain this convention and supply verification
+dates or a justified existing exception. Do not freeze the scan to an old file list.

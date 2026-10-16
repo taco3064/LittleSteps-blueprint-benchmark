@@ -1,3 +1,4 @@
+import { E2E_TEST_FILES } from './e2e/testFiles';
 import { configDefaults, defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import path from 'path';
@@ -12,7 +13,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'happy-dom',
-    setupFiles: './src/test/setup.ts',
+    setupFiles: './test-support/setup.ts',
     css: false,
     // e2e/ 的 *.spec.ts 是 Playwright 的案例，跑在真的瀏覽器裡。Vitest 預設會
     // 把整個 repo 的 *.spec.ts 都收進來，收到的當下就會因為找不到 Playwright
@@ -21,13 +22,13 @@ export default defineConfig({
     // `.claude/worktrees/` is a second copy of this repo, and without the
     // wildcard Vitest collects its Playwright specs too — 465 files and 642
     // failures that say nothing about the code under test.
-    exclude: [...configDefaults.exclude, '**/e2e/**', '**/.claude/worktrees/**'],
+    exclude: [...E2E_TEST_FILES, ...configDefaults.exclude, '**/e2e/**', '**/.claude/worktrees/**'],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
       exclude: [
         'node_modules/',
-        'src/test/',
+        'test-support/',
         '**/*.d.ts',
         '**/*.config.*',
         '**/mockData',
@@ -37,7 +38,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '~app': path.resolve(__dirname, './src'),
     },
   },
 });
